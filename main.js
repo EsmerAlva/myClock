@@ -124,14 +124,19 @@ $(document).ready(function() {
   displayTime();
   */
   function displayQuote() {
+    var currentTime = new Date();
+    var seconds = currentTime.getSeconds();
     var quoteDiv = document.getElementById('quote');
-    var i = Math.floor((Math.random()* 10));
-     quoteDiv.innerText = quotes[i];
+    if(seconds%5 == 0){
+      var i = Math.floor((Math.random()* 10));
+       quoteDiv.innerText = quotes[i];
+    }
+
   }
 
   //runs once a second aka 1000 milliseconds, added in step 7
   setInterval(displayTime, 1000);
-  setInterval(displayQuote, 5000);
+  setInterval(displayQuote, 1000);
 
 
 });
