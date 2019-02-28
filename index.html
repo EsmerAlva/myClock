@@ -3,34 +3,30 @@
 <head>
     <title>Digital Clock</title>
     <meta charset="utf-8">
+<!--
+play with front
+scroll in fade out
+input time and set alarm for music to play
+have quotes appear at certain intervals -->
 
+
+<!-- flexbox
+flexbox froggy - game that teaches you how to use flexbox
+breakpoints -->
     <!-- stylesheet added in step 6 -->
     <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
 
     <!-- this is a link to the Microsoft CDN of jQuery below -->
      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-     <script type = "text/javascript">
+     <!-- <script type = "text/javascript">
 
-            var quotes = new Array();
-            quotes[0] = "Time flies like an arrow; fruit flies like a banana. \n-Anthony G. Oettinger";
-            quotes[1] = "Time you enjoy wasting is not wasted time. \n― Marthe Troly-Curtin, Phrynette Married";
-            quotes[2] = "How did it get so late so soon? \n― Dr. Seuss";
-            quotes[3] = "Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin. \n― Mother Theresa"
-            quotes[4] = "Don't spend time beating on a wall, hoping to transform it into a door. \n― Coco Chanel";
-            quotes[5] = "Time is the longest distance between two places. \n― Tennessee Williams, The Glass Menagerie";
-            quotes[6] = "Time is an illusion. \n― Albert Einstein";
-            quotes[7] = "You may delay, but time will not. \n-Benjamin Franklin";
-            quotes[8] = "The past is never dead. It's not even past. \n-William Faulkner, Requiem for a Nun";
-            quotes[9] = "It’s dark now and I am very tired. I love you, always. Time is nothing. \n-Audrey Niffenegger, The Time Traveler's Wife";
-           function sayHello() {
-             var i = Math.floor((Math.random()* 10));
-              alert(quotes[i]);
-           }
-        </script>
+
+        </script> -->
 </head>
-<input id = 'button' type = "button" onclick = "sayHello()" value = "Click Here For A Thing" />
+<!-- <input id = 'button' type = "button" onclick = "sayHello()" value = "Click Here For A Thing" /> -->
 
 <body>
+    <div id ='quote'></div>
     <div id='clock'></div>
     <script src="main.js"></script>
     <audio controls autoplay>

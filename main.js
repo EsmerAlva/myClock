@@ -65,6 +65,19 @@ $(document).ready(function() {
   colors[58] = "#ffc6f4";
   colors[59] = "#ffc6e0";
 
+  var quotes = new Array();
+  quotes[0] = "Time flies like an arrow; fruit flies like a banana. \n-Anthony G. Oettinger";
+  quotes[1] = "Time you enjoy wasting is not wasted time. \n― Marthe Troly-Curtin, Phrynette Married";
+  quotes[2] = "How did it get so late so soon? \n― Dr. Seuss";
+  quotes[3] = "Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin. \n― Mother Theresa"
+  quotes[4] = "Don't spend time beating on a wall, hoping to transform it into a door. \n― Coco Chanel";
+  quotes[5] = "Time is the longest distance between two places. \n― Tennessee Williams, The Glass Menagerie";
+  quotes[6] = "Time is an illusion. \n― Albert Einstein";
+  quotes[7] = "You may delay, but time will not. \n-Benjamin Franklin";
+  quotes[8] = "The past is never dead. It's not even past. \n-William Faulkner, Requiem for a Nun";
+  quotes[9] = "It’s dark now and I am very tired. I love you, always. Time is nothing. \n-Audrey Niffenegger, The Time Traveler's Wife";
+
+
   function displayTime() {
 	   var currentTime = new Date();
 	   var hours = currentTime.getHours();
@@ -110,10 +123,15 @@ $(document).ready(function() {
   // This runs the displayTime function the first time
   displayTime();
   */
+  function displayQuote() {
+    var quoteDiv = document.getElementById('quote');
+    var i = Math.floor((Math.random()* 10));
+     quoteDiv.innerText = quotes[i];
+  }
 
   //runs once a second aka 1000 milliseconds, added in step 7
   setInterval(displayTime, 1000);
-
+  setInterval(displayQuote, 5000);
 
 
 });
